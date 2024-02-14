@@ -147,6 +147,19 @@ p {
   transition: background-color 0.5s ease;
 }
 
+.etheris-button {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
 .twitter-button:hover {
   background-color: #00e1ff; /* Altera a cor de fundo ao passar o mouse */
   transform: translateY(-5px); /* Aplica uma ligeira animação de deslocamento para cima */
@@ -160,6 +173,11 @@ p {
 .instagram-button:hover {
     background-color: linear-gradient(35deg, #ffe343, #ff3e3e, #d100d1);
     transform: translateY(-5px);
+}
+
+.etheris-button:hover {
+  background-color: rgb(255, 153, 35);
+  transform: translateY(-5px);
 }
 
 .portfolio-section {
