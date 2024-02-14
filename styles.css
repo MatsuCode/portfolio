@@ -106,58 +106,44 @@ p {
 .social-buttons {
   margin-top: 10px;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.twitter-button {
-  display: inline-block;
-  margin-right: 30px;
-  padding: 8px 16px;
-  background-color: #3c7cb1;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  font-family: 'Baloo Bhai 2', sans-serif;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
-
-.youtube-button {
-  display: inline-block;
-  margin-right: 30px;
-  padding: 8px 16px;
-  background-color: #ff0800;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  font-family: 'Baloo Bhai 2', sans-serif;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
-
-.instagram-button {
-  display: inline-block;
-  margin-right: 30px;
-  padding: 8px 16px;
-  background-image: linear-gradient(35deg, #FFD700, #FF0000, #800080); /* Gradiente diagonal nas cores amarelo, vermelho e roxo */
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  font-family: 'Baloo Bhai 2', sans-serif;
-  text-decoration: none;
-  transition: background-color 0.5s ease;
-}
-
+.twitter-button,
+.youtube-button,
+.instagram-button,
 .etheris-button {
   display: inline-block;
   margin-right: 30px;
   padding: 8px 16px;
-  background-color: #ff6600;
-  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   font-family: 'Baloo Bhai 2', sans-serif;
   text-decoration: none;
   transition: background-color 0.5s ease;
+  margin-bottom: 3%;
+}
+
+.twitter-button {
+  background-color: #3c7cb1;
+  color: rgb(255, 255, 255);
+  
+}
+
+.youtube-button {
+  background-color: #ff0800;
+  color: rgb(255, 255, 255);
+}
+
+.instagram-button {
+  background-image: linear-gradient(35deg, #FFD700, #FF0000, #800080); /* Gradiente diagonal nas cores amarelo, vermelho e roxo */
+  color: rgb(255, 255, 255);
+}
+
+.etheris-button {
+  background-color: #ff6600;
+  color: rgb(255, 255, 255);
 }
 
 .twitter-button:hover {
