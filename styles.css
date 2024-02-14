@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/background.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+h1 {
+  color: white;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+p {
+  color: white;
+  font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+.title {
+  background-color: rgb(255, 102, 0);
+  border-radius: 10px;
+}
+
+.panel {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%; /* Ajusta a largura do painel para 75% da largura da tela */
+  max-width: 700px;
+  height: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.title {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; /* Permite que o conteúdo se ajuste em várias linhas */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  margin-right: 30px;
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  color: white;
+  font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as habilidades se ajustem em várias linhas */
+  justify-content: center;
+}
+
+.skill {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 120px;
+  margin: 10px; /* Adiciona margem entre as habilidades */
+}
+
+.skill i, .skill img {
+  font-size: 24px;
+  color: #fff;
+}
+
+.skill p {
+  color: white;
+  font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+.additional-text {
+  margin-top: 20px;
+  color: white;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.twitter-button {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 8px 16px;
+  background-color: #3c7cb1;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.youtube-button {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 8px 16px;
+  background-color: #ff0800;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.instagram-button {
+  display: inline-block;
+  margin-right: 30px;
+  padding: 8px 16px;
+  background-image: linear-gradient(35deg, #FFD700, #FF0000, #800080); /* Gradiente diagonal nas cores amarelo, vermelho e roxo */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+}
+
+.twitter-button:hover {
+  background-color: #00e1ff; /* Altera a cor de fundo ao passar o mouse */
+  transform: translateY(-5px); /* Aplica uma ligeira animação de deslocamento para cima */
+}
+
+.youtube-button:hover {
+  background-color: #ff5151; /* Altera a cor de fundo ao passar o mouse */
+  transform: translateY(-5px); /* Aplica uma ligeira animação de deslocamento para cima */
+}
+
+.instagram-button:hover {
+    background-color: linear-gradient(35deg, #ffe343, #ff3e3e, #d100d1);
+    transform: translateY(-5px);
+}
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  text-align: center;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 90%;
+  height: auto;
+}
+
+.project img:hover {
+  transform: translateY(-5px);
+}
+
+.project a {
+  display: block;
+  margin-top: 10px;
+}
