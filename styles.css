@@ -113,9 +113,10 @@ p {
 .twitter-button,
 .youtube-button,
 .instagram-button,
-.etheris-button {
+.etheris-button,
+.github-button {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 10px;
   padding: 8px 16px;
   border: none;
   border-radius: 5px;
@@ -146,6 +147,11 @@ p {
   color: rgb(255, 255, 255);
 }
 
+.github-button {
+  background-color: #1d3557;
+  color: rgb(255, 255, 255);
+}
+
 .twitter-button:hover {
   background-color: #00e1ff; /* Altera a cor de fundo ao passar o mouse */
   transform: translateY(-5px); /* Aplica uma ligeira animação de deslocamento para cima */
@@ -157,12 +163,16 @@ p {
 }
 
 .instagram-button:hover {
-    background-color: linear-gradient(35deg, #ffe343, #ff3e3e, #d100d1);
     transform: translateY(-5px);
 }
 
 .etheris-button:hover {
   background-color: rgb(255, 153, 35);
+  transform: translateY(-5px);
+}
+
+.github-button:hover {
+  background-color: rgb(73, 85, 255);
   transform: translateY(-5px);
 }
 
