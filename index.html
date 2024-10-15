@@ -3,131 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno "Matsu" Ramon</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-
-        body {
-            font-family: 'Courier Prime', monospace;
-            background: url('./images/bg.jpeg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            backdrop-filter: blur(10px);
-            height: 200vh; /* Espaço extra para rolagem para baixo */
-        }
-        .content {
-            text-align: left;
-            position: fixed;
-            top: 20%;
-            left: 10%;
-            transform: translateY(-50%);
-        }
-        .title {
-            font-size: 3em;
-            margin: 0;
-        }
-        .subtitle {
-            font-size: 1.5em;
-            margin-top: 0.5em;
-        }
-        .nav {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-        .nav a:hover {
-            color: #aaaaaa;
-        }
-        .projects-section {
-            margin-top: 90vh; /* Espaço para a seção de introdução */
-            width: 100%;
-            padding: 20px;
-            white-space: nowrap; /* Impede a quebra de linha para forçar a rolagem horizontal */
-            overflow-x: auto; /* Habilita a rolagem horizontal */
-        }
-        .project {
-            display: inline-block; /* Alinha os projetos em linha reta */
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            border-radius: 10px;
-            padding: 20px;
-            min-width: 300px;
-            margin-right: 20px;
-            vertical-align: top;
-        }
-        .project img {
-            width: auto;
-            height: 30vh;
-            border-radius: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .project img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-        }
-        .project-title {
-            font-size: 1.5em;
-            margin: 10px 0 0 0;
-        }
-        .project-description {
-            margin-top: 10px;
-        }
-    </style>
+    <title>Matsu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="content">
-        <h1 class="title">Bruno Ramon</h1>
+        <h1 class="title">Bruno "Matsu" Ramon</h1>
         <p class="subtitle">Desenvolvedor de Jogos e Gamer</p>
     </div>
     <div class="nav">
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="projects.html">Projetos</a>
+        <a href="sobremim.html">Sobre mim</a>
         <a href="contato.html">Contato</a>
-    </div>
-    <div class="projects-section">
-        <div class="project">
-            <a href="https://link-do-projeto1.com" target="_blank">
-                <img src="./images/ecorush.webp" alt="Eco Rush">
-            </a>
-            <h3 class="project-title">Eco Rush</h3>
-            <p class="project-description">
-                O primeiro jogo que eu criei em toda minha vida. 
-                Foi feito para o meu TCC sobre jogos e educação financeira, que me rendeu 
-                uma aprovação no curso de técnico de informática.
-            </p>
-        </div>
-        <div class="project">
-            <a href="https://link-do-projeto2.com" target="_blank">
-                <img src="./images/asteroids.webp" alt="Asteroids++ Remake">
-            </a>
-            <h3 class="project-title">Asteroids++ Remake</h3>
-            <p class="project-description">
-                Jogo criado em 4 horas para um desafio entre mim e meus amigos. 
-                É um remake do Asteroids de Atari que conta com modo multiplayer.
-            </p>
-        </div>
-        <div class="project">
-            <a href="https://link-do-projeto3.com" target="_blank">
-                <img src="./images/lnl.webp" alt="Locks 'n' Leaps">
-            </a>
-            <h3 class="project-title">Locks 'n' Leaps</h3>
-            <p class="project-description">
-                Este jogo foi uma das minhas maiores paixões desde o começo da minha experiência como game dev. 
-                foi meu primeiro jogo.
-            </p>
-        </div>
     </div>
 </body>
 </html>

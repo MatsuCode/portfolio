@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background: url('./images/bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s ease; /* Adiciona a transição para a cor e a escala */
+}
+
+.nav a:hover {
+    color: #aaaaaa;
+    transform: scale(1.1); /* Efeito de scale no hover */
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px; /* Aumenta a margem no topo */
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px; /* Margem entre os projetos */
+    width: 80%; /* Definir largura do projeto */
+    max-width: 600px; /* Limitar largura máxima */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Aumenta a escala do projeto */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra */
+}
+
+.project img {
+    border-radius: 10px;
+    max-width: 100%; /* Garantir que a imagem se ajuste ao projeto */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+
+.project-description {
+    margin-top: 10px;
+}
