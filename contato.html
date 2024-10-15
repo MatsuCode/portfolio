@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: url('./images/bg.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            backdrop-filter: blur(10px);
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #aaaaaa;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .button img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </div>
+    <div>
+        <h1>Fale comigo!</h1>
+    </div>
+    <div class="button-container">
+        <a href="https://www.instagram.com/seuPerfil" target="_blank" class="button">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+        </a>
+        <a href="mailto:seuEmail@example.com" class="button">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/gmail.png" alt="Email">
+        </a>
+        <a href="https://discord.com/users/seuDiscord" target="_blank" class="button">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord">
+        </a>
+        <a href="https://twitter.com/seuTwitter" target="_blank" class="button">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter">
+        </a>
+    </div>
+</body>
+</html>
