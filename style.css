@@ -2,71 +2,100 @@
 
 body {
     font-family: 'Courier Prime', monospace;
-    background: url('./images/bg.jpeg') no-repeat center center fixed;
+    background: url('./images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
     margin: 0;
-    display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
 }
 
 .landing-content {
-    margin-top: 17%;
-    margin-bottom: 17%;
+    display: flex;
+    justify-content: space-between; /* Espaço entre o texto e a imagem */
+    align-items: center;
+    margin-top: 7%;
     margin-left: 5%;
-    font-size: 25px;
+    font-size: larger;
+}
+
+.text-container {
+    max-width: 50%; /* Limita a largura do texto */
+}
+
+.image-container {
+    margin-right: 5%; /* Adiciona espaço entre o texto e a imagem */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed; /* Fixa a barra de navegação na tela */
+    top: 0;
+    width: 100%; /* Faz a barra ocupar a largura total da tela */
+    background: rgba(0, 0, 0, 0.3); /* Aumentando a transparência do fundo */
+    backdrop-filter: blur(2px); /* Aplica blur à barra de navegação */
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    padding: 20px 20px; /* Adiciona padding para espaçamento */
+    z-index: 1000; /* Garante que a barra fique sobre outros elementos */
 }
 
 .nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 20px;
+    margin-right: 3%;
     font-size: 1.2em;
-    transition: color 0.3s, transform 0.3s ease; /* Adiciona a transição para a cor e a escala */
+    transition: color 0.3s, transform 0.3s ease;
 }
 
 .nav a:hover {
     color: #aaaaaa;
-    transform: scale(1.1); /* Efeito de scale no hover */
+    transform: scale(1.1);
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 5%;
 }
 
 .projects-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    margin: 20px;
-    margin-top: 50px; /* Aumenta a margem no topo */
+    padding: 20px;
+    margin-top: 60px; /* Espaço para não ficar atrás da navbar */
+    gap: 20px;
 }
 
 .project {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(1.5vh);
-    border-radius: 5vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
-    width: 80%; 
-    max-width: 600px;
+    max-width: 300px; /* Largura específica */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project p {
+    margin-top: 20px;
 }
 
 .project:hover {
-    transform: scale(1.05); /* Aumenta a escala do projeto */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adiciona uma sombra */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .project img {
     border-radius: 10px;
-    max-width: 100%; /* Garantir que a imagem se ajuste ao projeto */
-    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+    max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .project-title {
@@ -76,4 +105,51 @@ body {
 
 .project-description {
     margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.button img {
+    width: 40px;
+    height: 40px;
+}
+
+.about-me {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.about-me {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o elemento */
+    text-align: center; /* Centraliza o texto */
 }
