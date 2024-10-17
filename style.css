@@ -13,6 +13,7 @@ body {
 
 .landing-content {
     margin-top: 17%;
+    margin-bottom: 17%;
     margin-left: 5%;
     font-size: 25px;
 }
@@ -50,9 +51,9 @@ body {
     backdrop-filter: blur(1.5vh);
     border-radius: 5vh;
     padding: 20px;
-    margin-bottom: 20px; /* Margem entre os projetos */
-    width: 80%; /* Definir largura do projeto */
-    max-width: 600px; /* Limitar largura máxima */
+    margin-bottom: 20px;
+    width: 80%; 
+    max-width: 600px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
 }
