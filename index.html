@@ -4,302 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Bruno Ramon - Portifólio Pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfólio</title>
 </head>
 
 <body>
-
     <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png">
-            </a>
+        <div class="logo">
+            <i class="fas fa-code"></i>
         </div>
-
-        <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#">Features</a></li>
-            <li id="link2" class="link"><a href="#">Pricing</a></li>
-            <li id="link3" class="link"><a href="#">About</a></li>
-        </ul>
-        <button class="btn">Contate-me</button>
+        <div class="title">
+            <h1>Portifólio - Bruno "Matsu" Ramon</h1>
+        </div>
     </nav>
 
-    <header class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>Transformando ideias em realidade mais que virtual</h4>
-            <H1>Oi, eu sou <span>Bruno "Matsu" Ramon</span>, desenvolvedor de software</H1>
-            <p>
-                Sou um desenvolvedor de jogos, e apicativos apaixonado por computadores e tecnologia.
-                Sou capaz de aprender rapidamente diversas linguagens de programação e ferramentas de desenvolvimento.
-            </p>
-            <button class="btn">Get Started</button>
+    <div class="about">
+        <div class="left">
+            <h3>Full Stack Developer</h3>
+            <div class="info">
+                <h2>Oi, eu sou Bruno Ramon</h2>
+                <p>Eu crio ferramentas, jogos e aplicativos</p>
+                <div class="buttons">
+                    <button class="hire" onclick="location.href='mailto:brunoramon2005@gmail.com'">
+                        <i class="fas fa-plus"></i> Me Contate!
+                    </button>
+                    <button class="email" onclick="copyEmail()">
+                        Copiar Email <i class="far fa-copy"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="image">
-            <img src="images/header.png">
+        <div class="right">
+            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+            <img src="images/Photo.jpg">
         </div>
-    </header>
+    </div>
 
-    <section class="container">
-        <h2 class="header">HABILIDADES</h2>
-        <div class="skills">
-            <div class="card">
-                <span><i class="ri-gamepad-fill"></i></span>
-                <h4>Game Dev</h4>
-                <p>
-                    Bastante experiência em desenvolvimento de jogos digitais, com diversos motores gráficos e linguagens de programação, sendo os meus favoritos, Unity e C#.
-                </p>
-                <a href="https://example.com/game-dev">Sobre <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-html5-fill"></i></span>
-                <h4>Programação web</h4>
-                <p>
-                    Desenvolvimento e manutenção de sites e aplicações web, com foco em usabilidade e performance.
-                </p>
-                <a href="https://example.com/web-dev">Sobre <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-blender-fill"></i></span>
-                <h4>Modelagem 3D</h4>
-                <p>
-                    Conhecimento e experiência em ferramentas como o Blender, para criação de modelos 3D, materiais, animações e muito mais.
-                </p>
-                <a href="https://blender.com/">Sobre <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-ubuntu-fill"></i></span>
-                <h4>Sistemas de base linux</h4>
-                <p>
-                    Conhecimento e experiência no uso de diversas ferramentas e sistemas de código aberto baseados no Linux.
-                </p>
-                <a href="https://pt.wikipedia.org/wiki/Linux">Sobre <i class="ri-arrow-right-line"></i></a>
-            </div>
-            <div class="card">
-                <span><i class="ri-github-fill"></i></span>
-                <h4>Git</h4>
-                <p>
-                    Uso de controle de versão Git para gerenciamento de projetos e colaboração com outros desenvolvedores.
-                </p>
-                <a href="https://git.com/">Sobre <i class="ri-arrow-right-line"></i></a>
-            </div>
-        </div>
-    </section>
+    <h1>SOBRE MIM</h1>
 
-    <section class="container">
-        <h2 class="header">PROJETOS</h2>
-        <p class="sub-header">
-            Projetos que desenvolvi e participei, com destaque para os que mais me orgulho.
-        </p>
-        <div class="projects">
-            <div class="card">
-                <div class="content">
-                    <h4>Arkanus Studios</h4>
-                    <img src="images/Projetos/arkanuslogo.png" alt="Arkanus Studios Logo">
-                    <p>
-                        Estúdio de desenvolvimento de jogos digitais, criado como um projeto de aprendizado
-                        no curso técnico com o nome de "Etheris Studios" e posteriormente anexado ao grupo Arkanus, que cria e gerencia sites, apps e
-                        bots para o Discord.
-                    </p>
+    <div class="works">
+        <div class="left">
+            <h3><i class="fas fa-circle"></i> Trabalhos e Educação</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Game Designer & Full-Stack Dev.</h5>
+                        <p>Bolsa de Pesquisa</p>
+                        <p>2023 - Presente</p>
+                    </div>
+                    <p>Instituto do Cérebro</p>
                 </div>
-                <button class="btn" onclick="window.location.href='arkanus.app'">Ver mais</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>EatList</h4>
-                    <img src="images/Projetos/EatList.jpg" alt="EatList symbolic image" style="max-width: 200px;">
-                    <p>
-                        Aplicativo de terminal para Windows e Linux, que permite criar listas de pedidos
-                        para restaurantes e lanchonetes, de forma simples, na qual o usuário pode adicionar
-                        itens na lista um por vez, empilhar itens iguais automaticamente e por fim, 
-                        gerar um texto copiável com a lista completa.
-                    </p>
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Full-Stack Game Developer</h5>
+                        <p>Startup</p>
+                        <p>2022 - presente</p>
+                    </div>
+                    <p>Arkanus Studios</p>
                 </div>
-                <button class="btn" onclick="window.location.href='https://github.com/MatsuDeveloper/EatList'">Ver projeto</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>Locks 'n' Leaps</h4>
-                    <img src="images/Projetos/lnl.webp" alt="Locks 'n' Leaps image" style="max-width: 200px;">
-                    <p>
-                        Jogo de plataforma 2D desenvolvido em Unity, com mecânicas de movimentação e salto,
-                        parkour e puzzles, com um sistema de câmeras que segue o jogador e fases com itens coletáveis,
-                        além de um sistema de combate simples, um chefe final e sistema de salvamento de progresso.
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Estudante</h5>
+                        <p>Curso Técnico em Jogos Digitais</p>
+                        <p>2022 - 2023</p>
+                    </div>
+                    <p>Instituto Metrópole Digital</p>
                 </div>
-                <button class="btn" onclick="window.location.href='https://arkanus.itch.io/locksnleaps'">Ver projeto</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>ECO Rush</h4>
-                    <img src="images/Projetos/ecorush.webp" alt="ECO Rush image" style="max-width: 200px;">
-                    <p>
-                        Um jogo estilo puzzle desenvolvido em Game Maker usando a linguagem GML para o meu trabalho de conclusão do curso técnico de
-                        informática em 2022. O jogo tinha como objetivo ilustrar e ensinar sobre economia pessoal e escolhas financeiras,
-                        com um sistema de pontuação baseado nos itens que o jogador coleta.
-                </div>
-                <button class="btn" onclick="window.location.href='https://gx.games/pt-br/games/43rnyo/eco-rush/'">Ver projeto</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>Asteroids ++</h4>
-                    <img src="images/Projetos/asteroids.webp" alt="Asteroids image" style="max-width: 200px;">
-                    <p>
-                        Um jogo arcade inspirado no asteroids de atari, feito em Game Maker Studio 2, usando GML. O jogo conta com um sistema de pontuação
-                        baseado em gameplay infinita, trilha sonora própria e um modo multiplayer cooperativo local.
-                </div>
-                <button class="btn" onclick="window.location.href='https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/'">Ver projeto</button>
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Estudante</h5>
+                        <p>2020 - 2022</p>
+                    </div>
+                    <p>CEEP Profª Lourdinha Guerra</p>
+                </div>asdasds
             </div>
         </div>
-    </section>
 
-    <section class="container">
-        <h2 class="header">EXPERIÊNCIA E EDUCAÇÃO</h2>
-        <p class="sub-header">
-            Onde estudei e trabalhei até agora, projetos que estive envolvido e habilidades que desenvolvi em cada um deles.
-        </p>
-        <div class="experience">
-            <div class="card">
-                <div class="content">
-                    <h4>CEEP Profª Lourdinha Guerra</h4>
-                    <h3>
-                        Ensino técnico<br>
-                        2020.1-2022.2
-                    </h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Lógica de programação
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Banco de dados
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Desenvolvimento web
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Desenvolvimento de sistemas
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Manutenção de computadores
-                    </p>
-                </div>
-                <button class="btn" onclick="window.location.href='https://qedu.org.br/escola/24087408-ceep-centro-estadual-de-educacao-profissional-professora-lourdinha-guerra'">Ver mais</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>Instituto Metrópole Digital - IMD/UFRN</h4>
-                    <h3>
-                        Ensino técnico<br>
-                        2022.2-2023.2
-                    </h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Desenvolvimento em Unity
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Modelagem 3D
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Game Designer
-                    </p>
-                    <p>
-                    <i class="ri-checkbox-circle-line"></i>
-                        UI Design
-                    </p>
-                    <p>  
-                    <i class="ri-checkbox-circle-line"></i>
-                        JavaScript e TypeScript
-                    </p>
-                    <p>
-                    <i class="ri-checkbox-circle-line"></i>
-                        Git, Github e Gitlab
-                    </p>
-                </div>
-                <button class="btn" onclick="window.location.href='https://www.metropoledigital.ufrn.br/portal/'">Ver Mais</button>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>Instituto do Cérebro</h4>
-                    <h3>
-                        Bolsa de pesquisa<br>
-                        2023.2-atualmente
-                    </h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Desenvolvimento em Unreal Engine
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Modelagem 3D
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Game design
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Level design
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Programação em C++ e Blueprint
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Desenvolvimento de IA e State Machines
-                    </p>
-                </div>
-                <button class="btn" onclick="window.location.href='https://neuro.ufrn.br'">Ver mais</button>
-            </div>
-        </div>
-    </section>
+        <div class="right">
+            <div class="item">
+                <a href="#">Sobre Meu Trabalho</a>
+                <p>
+                    Como desenvolvedor de jogos, estou apto a trabalhar com diversas
+                    game engines dentre as mais famosas do mercado, como GameMaker Studio 2,
+                    Unity e Unreal Engine. Além disso, tenho conhecimento em programação
+                    também voltada para a criação de aplicativos com C#, Bash e JavaScript.
+                </p>
 
-    <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="images\logo.png">
             </div>
-            <p>
-                Fale comigo nas redes sociais!
-            </p>
-            <div class="socials">
-                <a href="#"><i class="ri-youtube-line"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-line"></i></a>
+            <div class="item">
+                <a href="#">Trabalho colaborativo</a>
+                <p>Desenvolvimento de projetos com organização em grupo.</p>
+            </div>
+            <div class="item">
+                <a href="#">Design de experiência do usuário</a>
+                <p>Criação de sistemas e interfaces voltados para todos os níveis de usuário</p>
+            </div>
+            <div class="item">
+                <a href="#">Desenvolvimento sob demanda</a>
+                <p>Criação de sites sob demanda juntamente com a equipe Arkanus.</p>
+            </div>
+            <div class="item">
+                <a href="#">Debugging e acessoria</a>
+                <p>Assistência a criação de projetos autorais.</p>
             </div>
         </div>
-        <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
+    </div>
+
+    <h1>PROJETOS</h1>
+
+    <div class="project">
+        <div class="left">
+            <a href="https://arkanus.itch.io/locksnleaps">
+                <h5>Locks n Leaps</h5>
+                <p>
+                    Meu primeiro jogo criado em C# utilizando a Unity como motor gráfico.
+                    Desenvolvido em 2022, o jogo apresenta mecânicas de plataforma, movimentação
+                    2D, parkour e sistemas de coletáveis, além de combate contra diversos inimigos
+                    e chefes.
+                </p>
+                <br>
+                <p>
+                    Tecnologias utilizadas: Unity, C#, Github, Audacity, Krita, Pixel Studio, Ibis Paint X
+                </p>
+            </a>
         </div>
-        <div class="column">
-            <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
-            <a href="#">Sponsors</a>
+        <div class="right">
+            <a href="https://arkanus.itch.io/locksnleaps">
+                <img src="images/Projetos/lnl.webp" alt="Locks n Leaps Project Photo">
+            </a>
         </div>
-        <div class="column">
-            <h4>Contact</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Privicy Policy</a>
-            <a href="#">Terms & Conditions</a>
+    </div>
+
+    <div class="project">
+        <div class="left">
+            <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">
+                <h5>ECO Rush</h5>
+                <p>
+                    O primeiro jogo que eu fiz em toda a minha vida. Desenvolvido em 2022,
+                    o ECO Rush foi criado como meu projeto de conclusão do curso de informática.
+                    Ele consiste em um jogo de arcade onde você deve coletar itens caindo do céu
+                    com seu mouse e evitar certos tipos de itens, que podem ser prejudiciais à sua
+                    pontuação. ele tem como objetivo ensinar sobre a importância dos bons hábitos
+                    e da economia pessoal.
+                </p>
+                <br>
+                <p>
+                    Tecnologias utilizadas: Game Maker Studio 2, GML, Pixel Studio, BeepBox.
+                </p>
+            </a>
         </div>
+        <div class="right">
+            <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">
+                <img src="images/Projetos/ecorush.webp" alt="Locks n Leaps Project Photo">
+            </a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="left">
+            <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">
+                <h5>Asteroids ++</h5>
+                <p>
+                    Uma tentativa de remake do jogo "Asteroids" do Atari 2600. Desenvolvi este jogo
+                    em apenas 4 horas, como um desafio entre amigos. O jogo conta com um modo arcade
+                    infinito além da adição de um modo co-op no qual você pode jogar junto com um amigo,
+                    onde cada um controla uma nave diferente e precisam destruir asteroids para proteger
+                    um ao outro. O jogo acaba quando os dois forem atingidos por asteroids.
+                </p>
+                <br>
+                <p>
+                    Tecnologias utilizadas: Game Maker Studio 2, GML, BeepBox, Canva.
+                </p>
+            </a>
+        </div>
+        <div class="right">
+            <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">
+                <img src="images/Projetos/asteroids.webp" alt="Asteroid Defense Project Photo">
+            </a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="left">
+            <a href="https://github.com/MatsuCode/EatList">
+                <h5>EatList</h5>
+                <p>
+                    Um aplicativo de terminal escrito em C# para Windows e Linux que permitia gerar listas de pedidos para fast-food,
+                    empilhando pedidos iguais para facilitar uma encomenda para muitas pessoas. Desenvolvido em 2023, o EatList foi
+                    criado para ajudar a organizar pedidos em grandes grupos, tornando o processo mais eficiente e menos propenso a erros.
+                </p>
+                <br>
+                <p>
+                    Tecnologias utilizadas: C#, .NET, Bash.
+                </p>
+            </a>
+        </div>
+        <div class="right">
+            <a href="https://github.com/MatsuCode/EatList">
+                <img src="images/Projetos/eatlist.png" alt="eatlist Project Photo">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="#">Meu Portfólio</a>
+        <div class="socials">
+            <a href="https://github.com/MatsuCode">Github</a>
+            <a href="https://www.instagram.com/matsucode/">Instagram</a>
+            <a href="https://www.linkedin.com/in/bruno-ramon-980004276/">LinkedIn</a>
+        </div>
+        <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function copyEmail() {
+            const email = "brunoramon2005@gmail.com";
+            navigator.clipboard.writeText(email).then(() => {
+                alert("Email copied to clipboard: " + email);
+            });
+        }
+    </script>
+
 </body>
 
 </html>
