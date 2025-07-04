@@ -4,228 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Game Dev</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <i class="fas fa-code"></i>
+    <section class="hero-video">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <!-- Para máxima qualidade, adicione o atributo poster e force a qualidade máxima se possível -->
+        </video>
+        <div class="hero-vignette"></div>
+        <div class="hero-title">
+            <h1>Bruno Ramon</h1>
+            <h3>game developer</h3>
         </div>
-        <div class="title">
-            <h1>Portifólio - Bruno "Matsu" Ramon</h1>
+    </section>
+    <nav class="topbar">
+        <div class="topbar-links">
+            <a href="#projetos">Projetos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contato">Contato</a>
         </div>
     </nav>
-
-    <div class="about">
-        <div class="left">
-            <h3>Full Stack Developer</h3>
-            <div class="info">
-                <h2>Oi, eu sou Bruno Ramon</h2>
-                <p>Eu crio ferramentas, jogos e aplicativos</p>
-                <div class="buttons">
-                    <button class="hire" onclick="location.href='mailto:brunoramon2005@gmail.com'">
-                        <i class="fas fa-plus"></i> Me Contate!
-                    </button>
-                    <button class="email" onclick="copyEmail()">
-                        Copiar Email <i class="far fa-copy"></i>
-                    </button>
+    <main class="centralizado">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou um desenvolvedor de jogos e entusiasta da criação de jogos de diversos tipos, desde o mais simples 2D
+                para dispositivos móveis até experiências complexas em 3D. Minha paixão por jogos me levou a explorar diferentes
+                motores e linguagens de programação, sempre buscando aprender e inovar. Comecei a criar em 2022, criando o jogo "ECO Rush"
+                como um trabalho de conclusão de curso, e desde então tenho trabalhado em vários projetos, aprimorando minhas habilidades
+                e expandindo meu portfólio.
+            </p>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <img src="img/jogo1.png" alt="Jogo 1">
+                    <h3>ECO Rush</h3>
+                    <p>Um jogo point'n'click feito no Game Maker Studio 2 sobre escolhas financeiras e caos!</p>
+                    <div class="projeto-icones">
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                    </div>
+                    <a href="#">jogar</a>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <img src="img/jogo2.png" alt="Jogo 2">
+                    <h3>Asteroids ++</h3>
+                    <p>Réplica do jogo "Asteroids" do Atari, porém, com multiplayer local, feito no Game Maker Studio 2.</p>
+                    <div class="projeto-icones">
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                    </div>
+                    <a href="#">Jogar</a>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <img src="img/jogo3.png" alt="Jogo 3">
+                    <h3>locks 'n' Leaps</h3>
+                    <p>Protótipo de jogo de plataforma feito na unity como um dos meus primeiros projetos.</p>
+                    <div class="projeto-icones">
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                        <i class="fab fa-android" title="Android"></i>
+                    </div>
+                    <a href="#">Jogar</a>
+                </div>
+                                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <img src="img/jogo3.png" alt="Jogo 3">
+                    <h3>S.O.D.R.</h3>
+                    <p>top-down shooter minimalista com diferentes armas e sistema de geração de inimigos infinita. feito com JavaScript pra um trabalho da faculdade.</p>
+                    <div class="projeto-icones">
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                        <i class="fab fa-android" title="Android"></i>
+                    </div>
+                    <a href="#">Jogar</a>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-grid">
+                <!-- Habilidade 1 -->
+                <div class="habilidade-card">
+                    <img src="img/unity-banner.jpg" alt="Unity">
+                    <h3>Unity</h3>
+                    <p>Experiência sólida em desenvolvimento de jogos 2D e 3D, prototipagem rápida e publicação multiplataforma.</p>
+                </div>
+                <!-- Habilidade 2 -->
+                <div class="habilidade-card">
+                    <img src="img/unreal-banner.webp" alt="Unreal Engine">
+                    <h3>Unreal Engine</h3>
+                    <p>Criação de experiências imersivas em 3D, blueprints, shaders e integração com C++.</p>
+                </div>
+                <!-- Habilidade 3 -->
+                <div class="habilidade-card">
+                    <img src="img/godot-banner.jpg" alt="Godot">
+                    <h3>Godot</h3>
+                    <p>Desenvolvimento ágil de jogos 2D, scripts em GDScript e foco em projetos open source.</p>
+                </div>
+                <!-- Habilidade 4 -->
+                <div class="habilidade-card">
+                    <img src="img/3d-modelling-banner.jpg" alt="3D Modeling">
+                    <h3>Blender</h3>
+                    <p>Produção de assets visuais, animações e modelagem para diferentes estilos de jogos.</p>
+                </div>
+                <!-- Habilidade 5 -->
+                <div class="habilidade-card">
+                    <img src="img/languages-banner.jpg" alt="C# / C++ / GDScript">
+                    <h3>C# / C++ / GDScript</h3>
+                    <p>Domínio das principais linguagens para games, com código limpo, modular e eficiente.</p>
+                </div>
+                <!-- Habilidade 6 -->
+                <div class="habilidade-card">
+                    <img src="img/game-design-banner.avif" alt="Game Design">
+                    <h3>Game Design</h3>
+                    <p>Criação de mecânicas, balanceamento, narrativa e experiência do jogador.</p>
                 </div>
             </div>
-        </div>
-        <div class="right">
-            <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
-            <img src="images/Photo.jpg">
-        </div>
-    </div>
-
-    <h1>SOBRE MIM</h1>
-
-    <div class="works">
-        <div class="left">
-            <h3><i class="fas fa-circle"></i> Trabalhos e Educação</h3>
-            <div class="works-list">
-                <div class="item">
-                    <div class="work-info">
-                        <h5 class="active">Game Designer & Full-Stack Dev.</h5>
-                        <p>Bolsa de Pesquisa</p>
-                        <p>2023 - Presente</p>
-                    </div>
-                    <p>Instituto do Cérebro</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <h5 class="active">Full-Stack Game Developer</h5>
-                        <p>Startup</p>
-                        <p>2022 - presente</p>
-                    </div>
-                    <p>Arkanus Studios</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <h5 class="active">Estudante</h5>
-                        <p>Curso Técnico em Jogos Digitais</p>
-                        <p>2022 - 2023</p>
-                    </div>
-                    <p>Instituto Metrópole Digital</p>
-                </div>
-                <div class="item">
-                    <div class="work-info">
-                        <h5 class="active">Estudante</h5>
-                        <p>2020 - 2022</p>
-                    </div>
-                    <p>CEEP Profª Lourdinha Guerra</p>
-                </div>asdasds
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="contato-redes">
+                <a href="https://instagram.com/" target="_blank" class="contato-btn instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="contato-btn twitter" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/" target="_blank" class="contato-btn youtube" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
-        </div>
-
-        <div class="right">
-            <div class="item">
-                <a href="#">Sobre Meu Trabalho</a>
-                <p>
-                    Como desenvolvedor de jogos, estou apto a trabalhar com diversas
-                    game engines dentre as mais famosas do mercado, como GameMaker Studio 2,
-                    Unity e Unreal Engine. Além disso, tenho conhecimento em programação
-                    também voltada para a criação de aplicativos com C#, Bash e JavaScript.
-                </p>
-
-            </div>
-            <div class="item">
-                <a href="#">Trabalho colaborativo</a>
-                <p>Desenvolvimento de projetos com organização em grupo.</p>
-            </div>
-            <div class="item">
-                <a href="#">Design de experiência do usuário</a>
-                <p>Criação de sistemas e interfaces voltados para todos os níveis de usuário</p>
-            </div>
-            <div class="item">
-                <a href="#">Desenvolvimento sob demanda</a>
-                <p>Criação de sites sob demanda juntamente com a equipe Arkanus.</p>
-            </div>
-            <div class="item">
-                <a href="#">Debugging e acessoria</a>
-                <p>Assistência a criação de projetos autorais.</p>
-            </div>
-        </div>
-    </div>
-
-    <h1>PROJETOS</h1>
-
-    <div class="project">
-        <div class="left">
-            <a href="https://arkanus.itch.io/locksnleaps">
-                <h5>Locks n Leaps</h5>
-                <p>
-                    Meu primeiro jogo criado em C# utilizando a Unity como motor gráfico.
-                    Desenvolvido em 2022, o jogo apresenta mecânicas de plataforma, movimentação
-                    2D, parkour e sistemas de coletáveis, além de combate contra diversos inimigos
-                    e chefes.
-                </p>
-                <br>
-                <p>
-                    Tecnologias utilizadas: Unity, C#, Github, Audacity, Krita, Pixel Studio, Ibis Paint X
-                </p>
-            </a>
-        </div>
-        <div class="right">
-            <a href="https://arkanus.itch.io/locksnleaps">
-                <img src="images/Projetos/lnl.webp" alt="Locks n Leaps Project Photo">
-            </a>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="left">
-            <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">
-                <h5>ECO Rush</h5>
-                <p>
-                    O primeiro jogo que eu fiz em toda a minha vida. Desenvolvido em 2022,
-                    o ECO Rush foi criado como meu projeto de conclusão do curso de informática.
-                    Ele consiste em um jogo de arcade onde você deve coletar itens caindo do céu
-                    com seu mouse e evitar certos tipos de itens, que podem ser prejudiciais à sua
-                    pontuação. ele tem como objetivo ensinar sobre a importância dos bons hábitos
-                    e da economia pessoal.
-                </p>
-                <br>
-                <p>
-                    Tecnologias utilizadas: Game Maker Studio 2, GML, Pixel Studio, BeepBox.
-                </p>
-            </a>
-        </div>
-        <div class="right">
-            <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">
-                <img src="images/Projetos/ecorush.webp" alt="Locks n Leaps Project Photo">
-            </a>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="left">
-            <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">
-                <h5>Asteroids ++</h5>
-                <p>
-                    Uma tentativa de remake do jogo "Asteroids" do Atari 2600. Desenvolvi este jogo
-                    em apenas 4 horas, como um desafio entre amigos. O jogo conta com um modo arcade
-                    infinito além da adição de um modo co-op no qual você pode jogar junto com um amigo,
-                    onde cada um controla uma nave diferente e precisam destruir asteroids para proteger
-                    um ao outro. O jogo acaba quando os dois forem atingidos por asteroids.
-                </p>
-                <br>
-                <p>
-                    Tecnologias utilizadas: Game Maker Studio 2, GML, BeepBox, Canva.
-                </p>
-            </a>
-        </div>
-        <div class="right">
-            <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">
-                <img src="images/Projetos/asteroids.webp" alt="Asteroid Defense Project Photo">
-            </a>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="left">
-            <a href="https://github.com/MatsuCode/EatList">
-                <h5>EatList</h5>
-                <p>
-                    Um aplicativo de terminal escrito em C# para Windows e Linux que permitia gerar listas de pedidos para fast-food,
-                    empilhando pedidos iguais para facilitar uma encomenda para muitas pessoas. Desenvolvido em 2023, o EatList foi
-                    criado para ajudar a organizar pedidos em grandes grupos, tornando o processo mais eficiente e menos propenso a erros.
-                </p>
-                <br>
-                <p>
-                    Tecnologias utilizadas: C#, .NET, Bash.
-                </p>
-            </a>
-        </div>
-        <div class="right">
-            <a href="https://github.com/MatsuCode/EatList">
-                <img src="images/Projetos/eatlist.png" alt="eatlist Project Photo">
-            </a>
-        </div>
-    </div>
-
-    <footer>
-        <a href="#">Meu Portfólio</a>
-        <div class="socials">
-            <a href="https://github.com/MatsuCode">Github</a>
-            <a href="https://www.instagram.com/matsucode/">Instagram</a>
-            <a href="https://www.linkedin.com/in/bruno-ramon-980004276/">LinkedIn</a>
-        </div>
-        <a class="online" href="#"><i class="fas fa-circle"></i> Available For Job</a>
+        </section>
+    </main>
+    <footer class="centralizado">
+        <p>&copy; 2025 Bruno Ramon. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-        function copyEmail() {
-            const email = "brunoramon2005@gmail.com";
-            navigator.clipboard.writeText(email).then(() => {
-                alert("Email copied to clipboard: " + email);
-            });
-        }
-    </script>
-
 </body>
 
 </html>
