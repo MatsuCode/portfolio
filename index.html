@@ -4,24 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Game Dev</title>
+    <title>Matsucode - Game Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <section class="hero-video">
+    <section class="profile-video">
         <video autoplay muted loop playsinline class="bg-video">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="img/showcase.mp4" type="video/mp4">
             <!-- Para máxima qualidade, adicione o atributo poster e force a qualidade máxima se possível -->
         </video>
-        <div class="hero-vignette"></div>
-        <div class="hero-title">
+        <div class="profile-vignette"></div>
+        <div class="profile-title">
             <h1>Bruno Ramon</h1>
             <h3>game developer</h3>
         </div>
+        <div class="profile-down-arrow">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
     <nav class="topbar">
+        <div class="topbar-title">
+            <img src="img/logo.png" alt="Logo" class="topbar-logo">
+            Matsucode
+        </div>
         <div class="topbar-links">
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
@@ -31,42 +39,49 @@
     <main class="centralizado">
         <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p>
-                Sou um desenvolvedor de jogos e entusiasta da criação de jogos de diversos tipos, desde o mais simples 2D
-                para dispositivos móveis até experiências complexas em 3D. Minha paixão por jogos me levou a explorar diferentes
-                motores e linguagens de programação, sempre buscando aprender e inovar. Comecei a criar em 2022, criando o jogo "ECO Rush"
-                como um trabalho de conclusão de curso, e desde então tenho trabalhado em vários projetos, aprimorando minhas habilidades
-                e expandindo meu portfólio.
-            </p>
+            <div class="sobre-flex">
+                <div class="sobre-foto">
+                    <img src="img/logo.png" alt="Foto Bruno Ramon" />
+                </div>
+                <div class="sobre-texto">
+                    <p>
+                        Sou um desenvolvedor de jogos, criador de conteúdo e entusiasta da criação de jogos de diversos tipos, desde o mais simples 2D
+                        para dispositivos móveis até experiências complexas em 3D. Minha paixão por jogos me levou a explorar diferentes
+                        motores e linguagens de programação, sempre buscando aprender e inovar. Crio jogos desde 2022 e como comecei desenvolvendo sozinho,
+                        consigo me virar bastante em quase todas as áreas do desenvolvimento. Como é de se esperar, eu gosto muito de jogos, mas meus estilos
+                        favoritos são jogos que, independente do gênero, dão liberdade para trilhar seu próprio caminho e jogar do jeito que você quer.
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="projetos">
             <h2>Projetos</h2>
             <div class="projetos-grid">
                 <!-- Projeto 1 -->
                 <div class="projeto-card">
-                    <img src="img/jogo1.png" alt="Jogo 1">
+                    <img src="img//Projetos/ecorush.webp" alt="Jogo 1">
                     <h3>ECO Rush</h3>
                     <p>Um jogo point'n'click feito no Game Maker Studio 2 sobre escolhas financeiras e caos!</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="#">jogar</a>
+                    <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">jogar</a>
                 </div>
                 <!-- Projeto 2 -->
                 <div class="projeto-card">
-                    <img src="img/jogo2.png" alt="Jogo 2">
+                    <img src="img/Projetos/asteroids.webp" alt="Jogo 2">
                     <h3>Asteroids ++</h3>
                     <p>Réplica do jogo "Asteroids" do Atari, porém, com multiplayer local, feito no Game Maker Studio 2.</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="#">Jogar</a>
+                    <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">Jogar</a>
                 </div>
                 <!-- Projeto 3 -->
                 <div class="projeto-card">
-                    <img src="img/jogo3.png" alt="Jogo 3">
+                    <img src="img/Projetos/lnl.webp" alt="Jogo 3">
                     <h3>locks 'n' Leaps</h3>
                     <p>Protótipo de jogo de plataforma feito na unity como um dos meus primeiros projetos.</p>
                     <div class="projeto-icones">
@@ -74,11 +89,11 @@
                         <i class="fab fa-linux" title="Linux"></i>
                         <i class="fab fa-android" title="Android"></i>
                     </div>
-                    <a href="#">Jogar</a>
+                    <a href="https://arkanus.itch.io/locksnleaps">Jogar</a>
                 </div>
                                 <!-- Projeto 3 -->
                 <div class="projeto-card">
-                    <img src="img/jogo3.png" alt="Jogo 3">
+                    <img src="img/Projetos/S.O.D.R..png" alt="Jogo 3">
                     <h3>S.O.D.R.</h3>
                     <p>top-down shooter minimalista com diferentes armas e sistema de geração de inimigos infinita. feito com JavaScript pra um trabalho da faculdade.</p>
                     <div class="projeto-icones">
@@ -86,7 +101,7 @@
                         <i class="fab fa-linux" title="Linux"></i>
                         <i class="fab fa-android" title="Android"></i>
                     </div>
-                    <a href="#">Jogar</a>
+                    <a href="https://matsucode.itch.io/sodr">Jogar</a>
                 </div>
                 <!-- Adicione mais projetos conforme necessário -->
             </div>
@@ -120,8 +135,8 @@
                 </div>
                 <!-- Habilidade 5 -->
                 <div class="habilidade-card">
-                    <img src="img/languages-banner.jpg" alt="C# / C++ / GDScript">
-                    <h3>C# / C++ / GDScript</h3>
+                    <img src="img/languages-banner.jpg" alt="C# / JavaScript / GDScript">
+                    <h3>C# / JavaScript / GDScript</h3>
                     <p>Domínio das principais linguagens para games, com código limpo, modular e eficiente.</p>
                 </div>
                 <!-- Habilidade 6 -->
@@ -135,13 +150,13 @@
         <section id="contato">
             <h2>Contato</h2>
             <div class="contato-redes">
-                <a href="https://instagram.com/" target="_blank" class="contato-btn instagram" title="Instagram">
+                <a href="https://x.com/MatsuCode" target="_blank" class="contato-btn instagram" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://twitter.com/" target="_blank" class="contato-btn twitter" title="Twitter">
+                <a href="https://x.com/MatsuCode" target="_blank" class="contato-btn twitter" title="Twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://youtube.com/" target="_blank" class="contato-btn youtube" title="YouTube">
+                <a href="https://www.youtube.com/@matsucode" target="_blank" class="contato-btn youtube" title="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>

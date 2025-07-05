@@ -22,6 +22,10 @@ a:hover{
     color: #388E3C !important;
 }
 
+h2 {
+    color: var(--cor-destaque);
+}
+
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -453,6 +457,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 100px;
     width: 100%;
+    justify-self: center;
     justify-items: center;
 }
 
@@ -543,7 +548,7 @@ section {
     border: 1px solid #e6f200;
 }
 
-.hero-video {
+.profile-video {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -562,7 +567,7 @@ section {
     pointer-events: none;
 }
 
-.hero-vignette {
+.profile-vignette {
     position: absolute;
     top: 0; left: 0;
     width: 100vw;
@@ -580,7 +585,7 @@ section {
     );
 }
 
-.hero-title {
+.profile-title {
     position: absolute;
     top: 50%;
     left: 7vw;
@@ -596,8 +601,8 @@ section {
     pointer-events: none;
 }
 
-.hero-title h1,
-.hero-title h3 {
+.profile-title h1,
+.profile-title h3 {
     display: block;
     width: auto;
     margin: 0;
@@ -605,7 +610,7 @@ section {
     padding-right: 0;
 }
 
-.hero-title h1 {
+.profile-title h1 {
     font-size: 3.2rem;
     font-weight: 800;
     letter-spacing: 2px;
@@ -617,7 +622,7 @@ section {
     pointer-events: auto;
 }
 
-.hero-title h3 {
+.profile-title h3 {
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-destaque);
@@ -642,6 +647,25 @@ section {
     align-items: center;
     justify-content: flex-end;
     padding: 0 48px 0 0;
+}
+
+.topbar-title {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-destaque);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.topbar-logo {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-right: 4px;
 }
 
 .topbar-links {
@@ -769,24 +793,112 @@ section {
     opacity: 0.85;
 }
 
+.profile-down-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 36px;
+    transform: translateX(-50%);
+    z-index: 5;
+    pointer-events: none;
+    animation: arrow-bounce 1.6s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1em;
+}
+
+.profile-down-arrow i {
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: 0.92;
+    filter: drop-shadow(0 2px 8px #000b);
+    line-height: 1;
+}
+
+.profile-down-arrow i + i {
+    margin-top: -0.5em;
+    font-size: 2.7rem;
+}
+
+@keyframes arrow-bounce {
+    0%   { transform: translateX(-50%) translateY(0); }
+    50%  { transform: translateX(-50%) translateY(18px);}
+    100% { transform: translateX(-50%) translateY(0);}
+}
+
+.sobre-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.sobre-foto {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-foto img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--cor-destaque);
+    background: #23283a;
+    box-shadow: 0 2px 12px #0003;
+}
+
+.sobre-texto {
+    flex: 1 1 0;
+    text-align: left;
+    font-size: 1.15rem;
+    color: #BDBDBD;
+    line-height: 1.7;
+}
+
 @media (max-width: 700px) {
-    .hero-video {
+    .sobre-flex {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        text-align: center;
+    }
+    .sobre-texto {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .sobre-foto img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 700px) {
+    .profile
+-video {
         height: 60vw;
         min-height: 220px;
     }
     .bg-video,
-    .hero-vignette {
+    .profile
+-vignette {
         height: 60vw;
         min-height: 220px;
     }
-    .hero-title {
+    .profile
+-title {
         top: 60%;
         left: 0;
         right: 0;
         width: 100vw;
         justify-content: center;
     }
-    .hero-title h1 {
+    .profile
+-title h1 {
         font-size: 2rem;
         padding: 8px 18px 8px 10px;
     }
