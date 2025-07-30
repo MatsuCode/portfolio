@@ -707,37 +707,29 @@ section {
     background: #23283a;
     color: var(--cor-destaque);
     border: 2px solid var(--cor-destaque);
-    transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+    transition: transform 0.18s, background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px #0002;
     text-align: center;
 }
 
 .contato-btn:hover,
 .contato-btn:focus {
-    background: var(--cor-destaque);
-    color: #181c24;
+    transform: scale(1.18);
+    /* Remove background and color overrides for hover */
+    background: #23283a;
+    color: var(--cor-destaque);
     border-color: var(--cor-destaque);
     box-shadow: 0 4px 16px #0004;
 }
 
-.contato-btn.instagram:hover {
-    color: #fff;
-    background: #e1306c;
-    border-color: #e1306c;
-}
-.contato-btn.twitter:hover {
-    color: #fff;
-    background: #1da1f2;
-    border-color: #1da1f2;
-}
-.contato-btn.bluesky:hover {
-    background: #0085ff;
-    border-color: #0085ff;
-}
+/* Remova os efeitos de hover específicos das redes sociais */
+.contato-btn.instagram:hover,
+.contato-btn.twitter:hover,
+.contato-btn.bluesky:hover,
 .contato-btn.youtube:hover {
-    color: #fff;
-    background: #ff0000;
-    border-color: #ff0000;
+    background: #23283a;
+    color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
 }
 
 .habilidades-grid {
@@ -1033,6 +1025,14 @@ section {
         width: 100%;
         height: 180px;
     }
+    main.centralizado > section {
+        padding: 0 8px;
+    }
+}
+
+header.centralizado {
+    display: none;
+
     main.centralizado > section {
         padding: 0 8px;
     }
