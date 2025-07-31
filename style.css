@@ -711,7 +711,6 @@ section {
 .contato-btn:hover,
 .contato-btn:focus {
     transform: scale(1.18);
-    /* Remove background and color overrides for hover */
     background: #23283a;
     color: var(--cor-destaque);
     border-color: var(--cor-destaque);
