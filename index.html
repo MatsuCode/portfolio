@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/logo.png">
     <title>Matsucode - Game Dev Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scrollbarLock.css">
+
+    <!-- Inter Bold -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+    <!-- IBM Plex Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (ícones usados nos botões de contato) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -18,8 +28,8 @@
         </video>
         <div class="profile-vignette"></div>
         <div class="profile-title">
-            <h1>Bruno Ramon</h1>
-            <h3>game developer</h3>
+            <h1>BRUNO<span> "MATSU" </span>RAMON</h1>
+            <h3>GAME DEVELOPER & FRONT-END DEVELOPER FOR WEB.</h3>
         </div>
         <div class="profile-down-arrow">
             <i class="fas fa-chevron-down"></i>
@@ -27,15 +37,11 @@
         </div>
     </section>
     <nav class="topbar">
-        <div class="topbar-title">
-            <img src="img/logo.png" alt="Logo" class="topbar-logo">
-            Matsucode
-        </div>
-        <div class="topbar-links">
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </div>
+        <a href="#contato">// About Me</a>
+        <a href="#projetos">// Skills</a>
+        <a href="#habilidades">// Games</a>
+        <a href="#contato">// Apps</a>
+        <a href="#contato">// Social</a>
     </nav>
     <main class="centralizado">
         <section id="sobre">
@@ -46,12 +52,12 @@
                 </div>
                 <div class="sobre-texto">
                     <p>
-                        Sou um desenvolvedor de jogos, criador de conteúdo e entusiasta da criação de experiências interativas
-                        desde jogos simples em 2D para dispositivos móveis até projetos mais complexos em 3D. Minha paixão por
-                        jogos me levou a explorar diferentes motores, linguagens de programação e também a experimentar com
-                        desenvolvimento web, criando aplicações interativas com JavaScript, HTML e bibliotecas como P5.js.<br>
+                        Desenvolvedor de jogos e front-end pra web,criador de conteúdo e entusiasta da criação de experiências interativas
+                        desde jogos simples em 2D para dispositivos móveis até sites extremamente bem trabalhados ou jogos complexos em 3D.
+                        Minha paixão pela computação me levou a explorar diferentes motores gráficos, linguagens de programação e também a experimentar
+                        desenvolvimento web, criando websites incríveis com JavaScript, HTML e experiências interativas com P5.js.<br>
                         <br>
-                        Crio jogos desde 2022, e como comecei desenvolvendo sozinho, acabei me tornando versátil em praticamente
+                        Sendo um criador de jogos desde 2022, comecei desenvolvendo sozinho, o que me tornou versátil em praticamente
                         todas as áreas do desenvolvimento. Recentemente, venho expandindo meus conhecimentos para o frontend web,
                         buscando unir criatividade técnica com interfaces funcionais.
                     </p>
@@ -165,23 +171,56 @@
         <section id="contato">
             <h2>Contato</h2>
             <div class="contato-redes">
-                <a href="https://www.instagram.com/matsucode/" target="_blank" class="contato-btn instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/matsucode/" target="_blank" rel="noopener noreferrer" class="contato-btn instagram" title="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
                 </a>
-                <a href="https://x.com/MatsuCode" target="_blank" class="contato-btn twitter" title="Twitter">
-                    <i class="fab fa-twitter"></i>
+
+                <!-- X / Twitter -->
+                <a href="https://x.com/MatsuCode" target="_blank" rel="noopener noreferrer" class="contato-btn twitter" title="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">X / Twitter</span>
                 </a>
-                <a href="https://www.youtube.com/@matsucode" target="_blank" class="contato-btn youtube" title="YouTube">
-                    <i class="fab fa-youtube"></i>
+
+                <!-- GitHub (novo) -->
+                <a href="https://github.com/MatsuCode" target="_blank" rel="noopener noreferrer" class="contato-btn github" title="GitHub">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span class="sr-only">GitHub</span>
                 </a>
-                <a href="https://matsucode.itch.io/" target="_blank" class="contato-btn itch" title="Itch.io">
-                    <i class="fab fa-itch-io"></i>
+
+                <!-- LinkedIn (novo) -->
+                <a href="https://www.linkedin.com/in/matsucode" target="_blank" rel="noopener noreferrer" class="contato-btn linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@matsucode" target="_blank" rel="noopener noreferrer" class="contato-btn youtube" title="YouTube">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                </a>
+
+                <!-- GX.Games (novo) -->
+                <a href="https://gx.games/" target="_blank" rel="noopener noreferrer" class="contato-btn gx" title="GX.Games">
+                    <!-- Inline SVG com 'GX' usando currentColor para herdar cor do botão -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="IBM Plex Mono, Inter, sans-serif" font-weight="700" font-size="10" fill="currentColor">GX</text>
+                    </svg>
+                    <span class="sr-only">GX.Games</span>
+                </a>
+
+
+                <!-- Itch (gamepad fallback) -->
+                <a href="https://matsucode.itch.io/" target="_blank" rel="noopener noreferrer" class="contato-btn itch" title="Itch.io">
+                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                    <span class="sr-only">Itch.io</span>
                 </a>
             </div>
         </section>
     </main>
     <footer class="centralizado">
-        <p>&copy; 2025 Bruno Ramon. Todos os direitos reservados.</p>
+        <p>&copy; Made by Matsu.</p>
     </footer>
 </body>
 
