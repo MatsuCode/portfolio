@@ -25,7 +25,8 @@
     border: 0 !important;
 }
 
-a{
+a, p {
+    font-family: 'IBM Plex Mono', monospace;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s ease;
@@ -38,6 +39,7 @@ h1 {
 h2, h3, h4, h5, h6, a {
     font-family: 'IBM Plex Mono', monospace;
 	font-weight: 700;
+    letter-spacing: 2px;
     color: var(--cor-destaque);
 }
 
