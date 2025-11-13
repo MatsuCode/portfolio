@@ -1,0 +1,41 @@
+/* Topbar styles separated from main stylesheet */
+
+.topbar {
+    width: 99%;
+    max-height: 4vh;
+    position: fixed;
+    top: 1%;
+    z-index: 10;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar a {
+    color: #d4d4d4;
+    font-size: 0.9vw;
+    margin: 2%;
+    transition: color 0.2s ease-in, transform 0.1s ease-in, margin 0.2s ease-in;
+}
+
+.topbar a:hover,
+.topbar a:focus {
+    color: var(--cor-destaque);
+    transform: scale(1.25);
+    margin: 3%;
+}
+
+@media (max-width: 700px) {
+    .topbar {
+        padding: 0 10px 0 0;
+        height: 44px;
+    }
+    .topbar-links {
+        gap: 16px;
+    }
+    .topbar-links a {
+        font-size: 1rem;
+        padding: 6px 0;
+    }
+}

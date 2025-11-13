@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/logo.png">
     <title>Matsucode - Game Dev Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="effects.css">
-    <link rel="stylesheet" href="scrollbarLock.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/topbar.css">
+    <link rel="stylesheet" href="style/projetos.css">
+    <link rel="stylesheet" href="style/habilidades.css">
+    <link rel="stylesheet" href="style/effects.css">
+    <link rel="stylesheet" href="style/scrollbarLock.css">
 
     <!-- Inter Bold -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
@@ -38,10 +41,10 @@
         </div>
     </section>
     <nav class="glass topbar">
-        <a href="#contato">// About Me</a>
+        <a href="#about-me">// About Me</a>
         <a href="#habilidades">// Skills</a>
-        <a href="#projetos">// Games</a>
-        <a href="#projetos">// Apps</a>
+        <a href="#jogos">// Games</a>
+        <a href="#solucoes">// Solutions</a>
         <a href="#contato">// Social</a>
     </nav>
     <main>
@@ -49,7 +52,7 @@
             <h2>SKILLS</h2>
             <div class="habilidades-grid">
                 <!-- Habilidade 1 -->
-                <div class="habilidade-card">
+                <div class="glass habilidade-card">
                     <div class="skill-heading">
                         <i class="fas fa-terminal skill-icon" aria-hidden="true"></i>
                         <div class="skill-lines">
@@ -60,7 +63,7 @@
                     <p>&gt;&gt; highly able to develop multiplatform console applications for many systems using C# and C++.</p>
                 </div>
                 <!-- Habilidade 2 -->
-                <div class="habilidade-card">
+                <div class="glass habilidade-card">
                     <div class="skill-heading">
                         <i class="fas fa-globe skill-icon" aria-hidden="true"></i>
                         <div class="skill-lines">
@@ -71,7 +74,7 @@
                     <p>&gt;&gt; Web development with clean and scalable code using mainly HTML, CSS, JS and frameworks as React.</p>
                 </div>
                 <!-- Habilidade 3 -->
-                <div class="habilidade-card">
+                <div class="glass habilidade-card">
                     <div class="skill-heading">
                         <i class="fas fa-gamepad skill-icon" aria-hidden="true"></i>
                         <div class="skill-lines">
@@ -83,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section id="sobre">
+        <section id="about-me">
             <h2>ABOUT ME</h2>
             <div class="sobre-flex">
                 <div class="sobre-foto">
@@ -91,83 +94,102 @@
                 </div>
                 <div class="sobre-texto">
                     <p>
-                        Desenvolvedor de jogos e front-end pra web,criador de conteúdo e entusiasta da criação de experiências interativas
-                        desde jogos simples em 2D para dispositivos móveis até sites extremamente bem trabalhados ou jogos complexos em 3D.
-                        Minha paixão pela computação me levou a explorar diferentes motores gráficos, linguagens de programação e também a experimentar
-                        desenvolvimento web, criando websites incríveis com JavaScript, HTML e experiências interativas com P5.js.<br>
+                        Game developer and web front-end developer, content creator, and enthusiast for creating interactive experiences,
+                        from simple 2D games for mobile devices to highly polished websites or complex 3D games. My passion for computing
+                        has led me to explore different graphics engines, programming languages, and also to experiment with web development,
+                        creating amazing websites with JavaScript, HTML, and interactive experiences with P5.js.<br>
                         <br>
-                        Sendo um criador de jogos desde 2022, comecei desenvolvendo sozinho, o que me tornou versátil em praticamente
-                        todas as áreas do desenvolvimento. Recentemente, venho expandindo meus conhecimentos para o frontend web,
-                        buscando unir criatividade técnica com interfaces funcionais.
+                        Being a game creator since 2022, I started developing on my own, which made me versatile in almost every area of
+                        development. Recently, I have been expanding my knowledge to web frontend, seeking to combine technical creativity
+                        with functional interfaces.
                     </p>
                 </div>
             </div>
         </section>
-        <section id="projetos">
-            <h2>Projetos</h2>
+        <section id="jogos">
+            <h2>GAMES</h2>
             <div class="projetos-grid">
                 <!-- Projeto 1 -->
-                <div class="projeto-card">
+                <div class="glass projeto-card">
                     <img src="img//Projetos/ecorush.webp" alt="eco rush">
-                    <h3>ECO Rush</h3>
-                    <p>Um jogo point'n'click feito no Game Maker Studio 2 sobre escolhas financeiras e caos!</p>
+                    <h3>ECO RUSH</h3>
+                    <p>A point'n'click game made in Game Maker Studio 2, about financial choices and chaos!</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">jogar</a>
+                    <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">Play</a>
                 </div>
                 <!-- Projeto 2 -->
-                <div class="projeto-card">
+                <div class="glass projeto-card">
                     <img src="img/Projetos/asteroids.webp" alt="Asteroids ++">
-                    <h3>Asteroids ++</h3>
-                    <p>Réplica do jogo "Asteroids" do Atari, porém, com multiplayer local, feito no Game Maker Studio 2.</p>
+                    <h3>ASTEROIDS ++</h3>
+                    <p>Remake of the game "Asteroids" from Atari, but with local co-op.</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">Jogar</a>
+                    <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">Play</a>
                 </div>
                 <!-- Projeto 3 -->
-                <div class="projeto-card">
+                <div class="glass projeto-card">
                     <img src="img/Projetos/lnl.webp" alt="lnl">
-                    <h3>locks 'n' Leaps</h3>
-                    <p>Protótipo de jogo de plataforma feito na unity como um dos meus primeiros projetos.</p>
+                    <h3>LOCKS 'N' LEAPS</h3>
+                    <p>Platformer game prototype made in Unity as one of my first projects.</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                         <i class="fab fa-android" title="Android"></i>
                     </div>
-                    <a href="https://arkanus.itch.io/locksnleaps">Jogar</a>
+                    <a href="https://arkanus.itch.io/locksnleaps">Play</a>
                 </div>
                 <!-- Projeto 3 -->
-                <div class="projeto-card">
+                <div class="glass projeto-card">
                     <img src="img/Projetos/ballageddon.png" alt="Ballageddon">
-                    <h3>ballageddon</h3>
-                    <p>top-down shooter minimalista com diferentes armas e sistema de geração de inimigos infinita. feito com JavaScript pra um trabalho da faculdade.</p>
+                    <h3>BALLAGEDDON</h3>
+                    <p>Minimalist top-down shooter with different weapons and infinite enemy generation system. Made with JavaScript for a college project.</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
-                        <i class="fab fa-android" title="Android"></i>
                     </div>
-                    <a href="https://matsucode.itch.io/sodr">Jogar</a>
+                    <a href="https://matsucode.itch.io/sodr">Play</a>
                 </div>
                 <!-- Projeto 4 -->
-                <div class="projeto-card">
+                <div class="glass projeto-card">
                     <img src="img/Projetos/COTP.png" alt="Jogo 3">
-                    <h3>Claws of the Past</h3>
-                    <p>Jogo de terror em 1ª pessoa sobre correr de dinossauros e procurar peças. Criado em 1 semana para a game jam do Toddyn.</p>
+                    <h3>CLAWS OF THE PAST</h3>
+                    <p>First-person horror game about running from dinosaurs and searching for parts. Created in 1 week for the Toddyn game jam.</p>
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                     </div>
-                    <a href="https://arkanus.itch.io/claws-of-the-past">Jogar</a>
+                    <a href="https://arkanus.itch.io/claws-of-the-past">Play</a>
                 </div>
                 
                 <!-- Adicione mais projetos conforme necessário -->
             </div>
         </section>
+
+        <section id="solucoes">
+            <h2>SOLUTIONS</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="glass projeto-card">
+                    <img src="img//Projetos/coding.jpg" alt="eco rush">
+                    <h3>EAT LIST</h3>
+                    <p>A powerful but simple CLI tool that can help you create delivery lists whenever you need
+                        to grab food for a large group of people. it's also completely open-source!</p>
+                    <div class="projeto-icones">
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                    </div>
+                    <a href="https://github.com/MatsuCode/EatList">Try</a>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        </section>
+
         <section id="contato">
-            <h2>Contato</h2>
+            <h2>SOCIALS</h2>
             <div class="contato-redes">
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/matsucode/" target="_blank" rel="noopener noreferrer" class="contato-btn instagram" title="Instagram">
@@ -188,7 +210,7 @@
                 </a>
 
                 <!-- LinkedIn (novo) -->
-                <a href="https://www.linkedin.com/in/matsucode" target="_blank" rel="noopener noreferrer" class="contato-btn linkedin" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/bruno-ramon-980004276/" target="_blank" rel="noopener noreferrer" class="contato-btn linkedin" title="LinkedIn">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                     <span class="sr-only">LinkedIn</span>
                 </a>
