@@ -41,11 +41,11 @@
         </div>
     </section>
     <nav class="glass topbar">
-        <a href="#about-me">// About Me</a>
-        <a href="#habilidades">// Skills</a>
-        <a href="#jogos">// Games</a>
-        <a href="#solucoes">// Solutions</a>
-        <a href="#contato">// Social</a>
+        <a href="#about-me">About Me</a>
+        <a href="#habilidades">Skills</a>
+        <a href="#jogos">Games</a>
+        <a href="#solucoes">Solutions</a>
+        <a href="#contato">Social</a>
     </nav>
     <main>
         <section id="habilidades">
@@ -118,7 +118,7 @@
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://gx.games/pt-br/games/43rnyo/eco-rush/">Play</a>
+                    <button class="projeto-btn" data-href="https://gx.games/pt-br/games/43rnyo/eco-rush/">Play</button>
                 </div>
                 <!-- Projeto 2 -->
                 <div class="glass projeto-card">
@@ -129,7 +129,7 @@
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">Play</a>
+                    <button class="projeto-btn" data-href="https://gx.games/pt-br/games/3aejru/asteroids-plus-remake/">Play</button>
                 </div>
                 <!-- Projeto 3 -->
                 <div class="glass projeto-card">
@@ -141,7 +141,7 @@
                         <i class="fab fa-linux" title="Linux"></i>
                         <i class="fab fa-android" title="Android"></i>
                     </div>
-                    <a href="https://arkanus.itch.io/locksnleaps">Play</a>
+                    <button class="projeto-btn" data-href="https://arkanus.itch.io/locksnleaps">Play</button>
                 </div>
                 <!-- Projeto 3 -->
                 <div class="glass projeto-card">
@@ -152,7 +152,7 @@
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://matsucode.itch.io/sodr">Play</a>
+                    <button class="projeto-btn" data-href="https://matsucode.itch.io/sodr">Play</button>
                 </div>
                 <!-- Projeto 4 -->
                 <div class="glass projeto-card">
@@ -162,7 +162,7 @@
                     <div class="projeto-icones">
                         <i class="fab fa-windows" title="Windows"></i>
                     </div>
-                    <a href="https://arkanus.itch.io/claws-of-the-past">Play</a>
+                    <button class="projeto-btn" data-href="https://arkanus.itch.io/claws-of-the-past">Play</button>
                 </div>
                 
                 <!-- Adicione mais projetos conforme necessário -->
@@ -182,7 +182,7 @@
                         <i class="fab fa-windows" title="Windows"></i>
                         <i class="fab fa-linux" title="Linux"></i>
                     </div>
-                    <a href="https://github.com/MatsuCode/EatList">Try</a>
+                    <button class="projeto-btn" data-href="https://github.com/MatsuCode/EatList">Try</button>
                 </div>
                 <!-- Adicione mais projetos conforme necessário -->
             </div>
@@ -241,6 +241,16 @@
     <footer class = "footer">
         <p>&copy; By Matsu.</p>
     </footer>
+    <script>
+        document.querySelectorAll('.projeto-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const href = this.dataset.href;
+                if (href) {
+                    window.open(href, '_blank');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
