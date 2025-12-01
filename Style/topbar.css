@@ -14,7 +14,7 @@
 
 .topbar a {
     color: #d4d4d4;
-    font-size: 0.9vw;
+    font-size: 2vh;
     margin: 2%;
     transition: color 0.2s ease-in, transform 0.1s ease-in, margin 0.2s ease-in;
 }
