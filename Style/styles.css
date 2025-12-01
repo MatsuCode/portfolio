@@ -470,7 +470,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 48px;
-    height: 48px;
+    max-height: 48px;
     border-radius: 50%;
     font-size: 1.7rem;
     background: #23283a;
@@ -479,6 +479,9 @@ section {
     transition: transform 0.18s, background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px #0002;
     text-align: center;
+}
+
+.contato-btn i {
 }
 
 .contato-btn:hover,
