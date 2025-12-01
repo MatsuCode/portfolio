@@ -13,7 +13,7 @@ a, p {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
     letter-spacing: 2px;
 }
 
@@ -295,7 +295,6 @@ footer a.online i{
 }
 
 footer{
-    margin-top: 10px;
     display: flex;
 }
 
@@ -479,9 +478,6 @@ section {
     transition: transform 0.18s, background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 8px #0002;
     text-align: center;
-}
-
-.contato-btn i {
 }
 
 .contato-btn:hover,
