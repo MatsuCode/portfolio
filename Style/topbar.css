@@ -2,6 +2,8 @@
 
 .topbar {
     width:auto;
+    max-width: 90%;
+    height: 12vh;
     max-height: 4vh;
     position: fixed;
     top: 1%;
@@ -10,20 +12,21 @@
     justify-self: center;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .topbar a {
     color: #d4d4d4;
-    font-size: 2vh;
-    margin: 20px;
+    font-size: clamp(0.8rem, 2vw, 2vh);
+    margin: 0 clamp(10px, 2.5vw, 20px);
     transition: color 0.1s ease-in, transform 0.1s ease-in, margin 0.1s ease-in;
 }
 
 .topbar a:hover,
 .topbar a:focus {
     color: var(--cor-destaque);
-    transform: scale(1.25);
-    margin: 50px;
+    transform: scale(1.1);
+    margin: 0 clamp(15px, 3vw, 30px);
 }
 
 @media (max-width: 700px) {
