@@ -26,13 +26,10 @@
 
 <body>
     <section class="profile-video">
-        <video autoplay muted loop playsinline class="bg-video">
-            <source src="img/showcase.webm" type="video/webm">
-            <!-- Para máxima qualidade, adicione o atributo poster e force a qualidade máxima se possível -->
-        </video>
         <div class="profile-title">
             <h1>BRUNO<span> "MATSU" </span>RAMON</h1>
-            <h3>GAME DEVELOPER & BACK-END DEVELOPER.</h3>
+            <h3>BACK-END AND GAME DEVELOPER.</h3>
+            <button onclick="SendMail()" class="mail-button"><i class="fas fa-envelope"></i> MAIL ME!</button>
         </div>
         <div class="profile-down-arrow">
             <i class="fas fa-chevron-down"></i>
@@ -44,7 +41,27 @@
         <a href="#habilidades">Skills</a>
         <a href="#jogos">Games</a>
         <a href="#solucoes">Solutions</a>
-        <a href="#contato">Social</a>
+        <a href="#" class="social-link">Social</a>
+        <div class="social-dropdown glass">
+            <a href="https://www.instagram.com/matsucode/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://x.com/MatsuCode" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i> X / Twitter
+            </a>
+            <a href="https://github.com/MatsuCode" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/bruno-ramon-980004276/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://www.youtube.com/@matsucode" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://matsucode.itch.io/" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-gamepad"></i> Itch.io
+            </a>
+        </div>
     </nav>
     <main>
         <section id="habilidades">
@@ -186,70 +203,12 @@
                 <!-- Adicione mais projetos conforme necessário -->
             </div>
         </section>
-
-        <section id="contato">
-            <h2>SOCIALS</h2>
-            <div class="contato-redes">
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/matsucode/" target="_blank" rel="noopener noreferrer" class="contato-btn instagram glass" title="Instagram">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a>
-
-                <!-- X / Twitter -->
-                <a href="https://x.com/MatsuCode" target="_blank" rel="noopener noreferrer" class="contato-btn twitter glass" title="Twitter">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">X / Twitter</span>
-                </a>
-
-                <!-- GitHub (novo) -->
-                <a href="https://github.com/MatsuCode" target="_blank" rel="noopener noreferrer" class="contato-btn github glass" title="GitHub">
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                    <span class="sr-only">GitHub</span>
-                </a>
-
-                <!-- LinkedIn (novo) -->
-                <a href="https://www.linkedin.com/in/bruno-ramon-980004276/" target="_blank" rel="noopener noreferrer" class="contato-btn linkedin glass" title="LinkedIn">
-                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-
-                <!-- YouTube -->
-                <a href="https://www.youtube.com/@matsucode" target="_blank" rel="noopener noreferrer" class="contato-btn youtube glass" title="YouTube">
-                    <i class="fab fa-youtube" aria-hidden="true"></i>
-                    <span class="sr-only">YouTube</span>
-                </a>
-
-                <!-- GX.Games (novo) -->
-                <a href="https://gx.games/" target="_blank" rel="noopener noreferrer" class="contato-btn gx glass" title="GX.Games">
-                    <!-- Inline SVG com 'GX' usando currentColor para herdar cor do botão -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
-                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="IBM Plex Mono, Inter, sans-serif" font-weight="700" font-size="10" fill="currentColor">GX</text>
-                    </svg>
-                    <span class="sr-only">GX.Games</span>
-                </a>
-
-                <!-- Itch (gamepad fallback) -->
-                <a href="https://matsucode.itch.io/" target="_blank" rel="noopener noreferrer" class="contato-btn itch glass" title="Itch.io">
-                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                    <span class="sr-only">Itch.io</span>
-                </a>
-            </div>
-        </section>
     </main>
     <footer class = "footer">
-        <p>&copy; By Matsu.</p>
+        <p>&copy; Made by Matsu.</p>
     </footer>
-    <script>
-        document.querySelectorAll('.projeto-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const href = this.dataset.href;
-                if (href) {
-                    window.open(href, '_blank');
-                }
-            });
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

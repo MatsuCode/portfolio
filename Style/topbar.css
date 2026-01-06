@@ -12,7 +12,6 @@
     justify-self: center;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .topbar a {
@@ -29,6 +28,10 @@
     margin: 0 clamp(15px, 3vw, 30px);
 }
 
+.social-link {
+    position: relative;
+}
+
 @media (max-width: 700px) {
     .topbar {
         padding: 0 10px 0 0;
@@ -42,3 +45,34 @@
         padding: 6px 0;
     }
 }
+
+.social-dropdown {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: rgba(35, 40, 58, 0.95);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 11;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    width: 6vw;
+}
+
+.social-dropdown a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+

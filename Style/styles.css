@@ -437,6 +437,28 @@ section {
     box-shadow: none;
 }
 
+.mail-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--cor-destaque);
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(255, 251, 2, 0.3);
+    pointer-events: auto;
+}
+
+.mail-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 251, 2, 0.5);
+}
+
 /* topbar moved to topbar.css */
 
 
@@ -583,6 +605,11 @@ section {
     .profile-title h1 {
         font-size: 2rem;
         padding: 8px 18px 8px 10px;
+    }
+    .mail-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+        margin-top: 15px;
     }
 
     /* topbar mobile adjustments moved to topbar.css */
