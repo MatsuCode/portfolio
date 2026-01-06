@@ -19,6 +19,7 @@
     max-width: 320px;
     width: 100%;
     transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
 }
 
 .habilidade-card:hover {
@@ -40,4 +41,42 @@
     margin: 0 18px;
     text-align: justify;
     opacity: 0.85;
+}
+
+.skill-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px 18px 0 18px;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    color: var(--cor-destaque);
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.skill-lines {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.skill-main {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.skill-sub {
+    margin: 0;
+    color: #BDBDBD;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
 }
