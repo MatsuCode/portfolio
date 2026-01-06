@@ -391,24 +391,6 @@ section {
     filter: brightness(50%);
 }
 
-.profile-vignette {
-    position: absolute;
-    bottom: 0; left: 0;
-    width: 100vw;
-    height: 20vh;
-    min-height: 50px;
-    z-index: 2;
-    pointer-events: none;
-    background: linear-gradient(
-        to top,
-        rgba(11,9,20,0.97) 0%,
-        rgba(11,9,20,0.85) 30%,
-        rgba(11,9,20,0.6) 60%,
-        rgba(11,9,20,0.18) 85%,
-        rgba(11,9,20,0) 100%
-    );
-}
-
 .profile-title {
     position: absolute;
     top: 50%;
@@ -420,6 +402,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
     align-items: center; 
     text-align: center;
     pointer-events: none;
