@@ -1,59 +1,26 @@
-function copyEmail() {
-    const email = "brunoramon2005@gmail.com";
-    navigator.clipboard.writeText(email).then(() => {
-        alert("Email copied to clipboard: " + email);
-    });
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const typingElement = document.getElementById('typing-text');
+    const textToType = 'BRUNO.';
+    let currentIndex = 0;
 
-function SendMail() {
-    const email = "brunoramon2005@gmail.com";
-    window.location.href = `mailto:${email}`;
-}
-
-document.querySelectorAll('.projeto-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-        const href = this.dataset.href;
-        if (href) {
-            window.open(href, '_blank');
+    function typeCharacter() {
+        if (currentIndex < textToType.length) {
+            typingElement.textContent += textToType[currentIndex];
+            currentIndex++;
+            setTimeout(typeCharacter, 400);
         }
-    });
-});
-
-const socialLink = document.querySelector('.social-link');
-const dropdown = document.querySelector('.social-dropdown');
-let isClickedOpen = false;
-
-socialLink.addEventListener('mouseenter', () => {
-    if (!isClickedOpen) {
-        dropdown.style.display = 'flex';
     }
+
+    typeCharacter();
 });
 
-socialLink.addEventListener('mouseleave', () => {
-    if (!isClickedOpen) {
-        setTimeout(() => {
-            if (!dropdown.matches(':hover')) {
-                dropdown.style.display = 'none';
-            }
-        }, 100);
-    }
-});
-
-socialLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    isClickedOpen = !isClickedOpen;
-    dropdown.style.display = isClickedOpen ? 'flex' : 'none';
-});
-
-dropdown.addEventListener('mouseleave', () => {
-    if (!isClickedOpen) {
-        dropdown.style.display = 'none';
-    }
-});
-
-document.addEventListener('click', (e) => {
-    if (!socialLink.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.style.display = 'none';
-        isClickedOpen = false;
-    }
-});
+function loadExperience(index) {
+    const items = document.querySelectorAll('.experience-item');
+    const jobs = document.querySelectorAll('.job');
+    
+    items.forEach(item => item.classList.remove('active'));
+    jobs.forEach(job => job.style.display = 'none');
+    
+    items[index].classList.add('active');
+    document.getElementById('job-' + index).style.display = 'block';
+}
