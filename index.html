@@ -43,6 +43,7 @@
                     <span>contact me</span>
                 </a>
             </div>
+            <img src="img/hero_image.png" alt="" class="hero-image">
         </section>
 
         <section id="sobre-mim" class="sobre-mim-section">
@@ -63,8 +64,8 @@
                         <a href="https://dotnet.microsoft.com" target="_blank" class="tech-icon" title="C#">
                             <img src="https://static.vecteezy.com/system/resources/thumbnails/048/332/165/small_2x/c-sharp-programming-icon-free-png.png" alt="C#" width="48" height="48">
                         </a>
-                        <a href="https://cplusplus.com" target="_blank" class="tech-icon" title="C++">
-                            <img src="https://seekvectors.com/files/download/C++-01.png" alt="C++" width="48" height="48">
+                        <a href="https://www.python.org" target="_blank" class="tech-icon" title="Python">
+                            <img src="https://cdn.simpleicons.org/python/ffffff.png" alt="Python" width="32" height="32">
                         </a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tech-icon" title="JavaScript">
                             <img src="https://cdn.simpleicons.org/javascript/ffffff.png" alt="JavaScript" width="32" height="32">
@@ -95,39 +96,51 @@
             </div>
             <div class="section-content">
                 <div class="experience-sidebar">
-                    <div class="experience-item active" onclick="loadExperience(0)">
-                        Institute of the Brain
-                    </div>
-                    <div class="experience-item" onclick="loadExperience(1)">
+                    <button type="button" class="experience-item active" aria-pressed="true" onclick="loadExperience(0)">
+                        Brain Institute
+                    </button>
+                    <button type="button" class="experience-item" aria-pressed="false" onclick="loadExperience(1)">
                         Arkanus Studios
-                    </div>
-                    <div class="experience-item" onclick="loadExperience(2)">
-                        Freelancer
-                    </div>
+                    </button>
+                    <button type="button" class="experience-item" aria-pressed="false" onclick="loadExperience(2)">
+                        Brain Institute
+                    </button>
                 </div>
                 
                 <div class="experience-content">
                     <div class="job" id="job-0" style="display: block;">
-                        <h3 class="job-title">Game Developer @ Institute of the Brain</h3>
-                        <p class="job-date">Dec 2023 - Jul 2025</p>
+                        <h3 class="job-title">Undergraduate Research Assistant @ Brain Institute</h3>
+                        <p class="job-date">jun 2023 - Sep 2025</p>
                         <div class="job-description-wrapper">
-                            <p class="job-description">Developed games using technologies like Unreal Engine, C++ and Git. Collaborated with multidisciplinary teams to create immersive experiences. Performed performance testing and product optimization across platforms to ensure maximum performance.</p>
+                            <ul class="job-description">
+                                <li>Developed an Unreal Engine game supporting research on sleep and dreams using electroencephalography (EEG).</li>
+                                <li>Implemented pathfinding mechanics to AI characters in 3D space.</li>
+                                <li>Improved the overall game experience by working on sound design and post-processing visual effects.</li>
+                            </ul>
                         </div>
                     </div>
                     
                     <div class="job" id="job-1">
-                        <h3 class="job-title">Game Developer @ Arkanus Studios</h3>
+                        <h3 class="job-title">Startup Generalist @ Arkanus Studios</h3>
                         <p class="job-date">Jun 2023 - Present</p>
                         <div class="job-description-wrapper">
-                            <p class="job-description">Assisted in developing interactive experiences for Discord using technologies like Unity and C#. Also supported design, testing, and technical decision-making processes.</p>
+                            <ul class="job-description">
+                                <li>Made updates to beta versions of the Mini Kraken virtual tabletop (VTT) platform.</li>
+                                <li>Researched and prospected potential clients for the company’s services.</li>
+                                <li>Contributed to web projects and gained hands-on experience with web development.</li>
+                            </ul>
                         </div>
                     </div>
                     
                     <div class="job" id="job-2">
-                        <h3 class="job-title">Indie Game Developer</h3>
-                        <p class="job-date">Jun 2023 - Present</p>
+                        <h3 class="job-title">Tech Innovation Fellow @ Institute of the Brain</h3>
+                        <p class="job-date">jun 2023 - Sep 2025</p>
                         <div class="job-description-wrapper">
-                            <p class="job-description">Started my career as a solo game developer, working with C#, JavaScript and game-specific languages like GML and GDScript. Learned development best practices, version control with Git, and team collaboration. Performed maintenance and implemented small features on existing projects.</p>
+                            <ul class="job-description">
+                                <li>Built a spreadsheet-based telemetry system to organize gameplay data for correlation with EEG recordings in an upcoming study involving dozens of participants.</li>
+                                <li>Optimized an Unreal Engine game to reduce unnecessary resource use and improve performance during research sessions.</li>
+                                <li>Updated and optimized a Python heatmap system to identify the areas most frequently visited by players.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -145,7 +158,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">ECO Rush</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=FAB005" alt="Gamepad icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=46ad5e" alt="Gamepad icon">
                         </div>
                         <p class="project-description">
                             A point-and-click game designed to teach financial decision-making in a chaotic and fun way.
@@ -159,7 +172,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">Asteroids++</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=FAB005" alt="Gamepad icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=46ad5e" alt="Gamepad icon">
                         </div>
                         <p class="project-description">
                             A space shooter inspired by the classic Asteroids. Focused on engaging gameplay and progressively challenging mechanics, with signature features like local multiplayer.
@@ -173,7 +186,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">Locks 'n' Leaps</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=FAB005" alt="Gamepad icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=46ad5e" alt="Gamepad icon">
                         </div>
                         <p class="project-description">
                             A 2D platformer focused on fluid movement mechanics and retro visual design.
@@ -187,7 +200,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">Ballageddon</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=FAB005" alt="Gamepad icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=46ad5e" alt="Gamepad icon">
                         </div>
                         <p class="project-description">
                             A top-down shooter about facing hordes of enemies, where all characters are simple colored balls with special abilities and various weapons.
@@ -201,7 +214,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">Claws of the Past</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=FAB005" alt="Gamepad icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=dLUbplhAvPvp&format=png&color=46ad5e" alt="Gamepad icon">
                         </div>
                         <p class="project-description">
                             A short 3D horror survival game about surviving against dinosaurs, created for a 3-day game jam.
@@ -215,7 +228,7 @@
                     <div class="project-card">
                         <div class="project-header">
                             <h3 class="project-title">EatList</h3>
-                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=hvZ4mmbc3mTK&format=png&color=FAB005" alt="Terminal icon">
+                            <img class="project-icon" src="https://img.icons8.com/?size=100&id=hvZ4mmbc3mTK&format=png&color=46ad5e" alt="Terminal icon">
                         </div>
                         <p class="project-description">
                             A powerful yet simple CLI tool that helps users create delivery lists when an order involves many items and people. Completely open-source.

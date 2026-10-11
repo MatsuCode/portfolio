@@ -18,9 +18,13 @@ function loadExperience(index) {
     const items = document.querySelectorAll('.experience-item');
     const jobs = document.querySelectorAll('.job');
     
-    items.forEach(item => item.classList.remove('active'));
+    items.forEach(item => {
+        item.classList.remove('active');
+        item.setAttribute('aria-pressed', 'false');
+    });
     jobs.forEach(job => job.style.display = 'none');
     
     items[index].classList.add('active');
+    items[index].setAttribute('aria-pressed', 'true');
     document.getElementById('job-' + index).style.display = 'block';
 }
